@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <img src="logo.png" alt="TravelBloom Logo" id="logo-image">
+            <span class="logo-text">TravelBloom</span>
+        </a>
+
+        <!-- Navigation links -->
+        <div class="nav-links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+         <div class="search-bar" style="visibility: hidden;">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Enter a destination or keyword">
+                <span class="search-icon"><i class="fa fa-search"></i></span>
+            </div>
+            <button class="search-btn">Search</button>
+            <button class="clear-btn">Clear</button>
+        </div>
+
+    </nav>
+
+    <section id="about">
+       <div class="about-bg">
+         <div class="social-bar">
+            <ul>
+                <li id="line"></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="about-content">
+             <h1 class="about-title">ABOUT US</h1>
+             <p class="about-text">
+                Welcome to Our Company! We re a team of passionate individuals dedicated to providing exellent services/products to customers. 
+                Our mission is to <bold>provide the best experience</bold> for people traveling to different destinations around the world.
+                Our values include integrity, innovation, customer satisfaction, and teamwork. Web believe in 
+                <bold>putting our customers first</bold> and <bald>working together</bald> to
+                achieve our goals.
+                <br>
+                Feel free to explore our website and learn more about what we offer!
+            </p>
+
+            <div class="team">
+                <h1>Our Team</h1>
+
+                <div class="person-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="card-info">
+                        <p class="card-name">John Doe</p>
+                        <p class="card-descr">John is responsible for...</p>
+                        <button class="card-btn">CEO</button>
+                    </div>
+                </div>
+
+                  <div class="person-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="card-info">
+                        <p class="card-name">Celina Thomas</p>
+                        <p class="card-descr">Celina is responsible for...</p>
+                        <button class="card-btn">Team Lead</button>
+                    </div>
+                </div>
+
+                  <div class="person-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="card-info">
+                        <p class="card-name">Mike Tysen</p>
+                        <p class="card-descr">Mike is responsible for...</p>
+                        <button class="card-btn">Delivery Head</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <div id="results"></div>
+
+    <script src="travel_recomendation.js"></script>
+</body>
+</html>

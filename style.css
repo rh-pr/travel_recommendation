@@ -113,13 +113,15 @@ body {
   }
 }
 
-#home {
+#home,
+#about {
   background-image: url("background.png");
   width: 99vw;
   height: 92vh;
 }
 
-.home-bg {
+.home-bg,
+.about-bg {
   weight: 100%;
   height: 100%;
   background: linear-gradient(
@@ -139,6 +141,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: between;
 }
 
 ul li {
@@ -157,16 +160,21 @@ ul li a i {
   margin-bottom: 60px;
 }
 
-.home-content {
+.home-content,
+.about-content {
   width: 90%;
   height: 60%;
-  /* background-color: rgba(16, 31, 33, 0.2); */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 40px;
+}
+
+.about-content {
+  justify-content: start;
+  height: 90%;
+  padding-left: 50px;
 }
 
 .home-title {
@@ -176,11 +184,28 @@ ul li a i {
   font-weight: bold;
 }
 
+.about-title {
+  color: white;
+  width: 90%;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 .home-text {
   color: white;
   width: 25%;
   font-size: 1rem;
   text-align: start;
+}
+
+.about-text {
+  color: white;
+  width: 80%;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 20px;
+  background-color: rgba(115, 122, 121, 0.2);
+  font-size: 1.11rem;
 }
 
 .book-btn {
@@ -192,3 +217,60 @@ ul li a i {
   font-size: 1rem;
   font-weight: bold;
 }
+
+.team {
+  display: flex;
+  gap: 20px;
+  justify-content: around;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  width: 80%;
+  margin-left: 5%;
+  /* background-color: rgba(0, 121, 107, 0.2); */
+}
+
+.team h1 {
+  font-size: 3rem;
+  width: 20%;
+}
+
+.person-card {
+  display: flex;
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: rgba(39, 68, 131, 0.2);
+  border-radius: 10px;
+}
+
+.card-image {
+  color: rgb(83, 130, 233);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.card-name {
+  font-weight: bold;
+}
+
+.card-descr {
+  color: rgb(214, 218, 230);
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.card-btn {
+  padding: 5px;
+  background-color: rgb(17, 46, 109);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgb(172, 174, 180);
+  border-radius: 5px;
