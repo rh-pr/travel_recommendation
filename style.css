@@ -93,6 +93,10 @@ body {
   color: white;
 }
 
+.search-icon i {
+  transform: scaleX(-1);
+}
+
 /* Responsive: stack elements on small screens */
 @media (max-width: 768px) {
   .navbar {
