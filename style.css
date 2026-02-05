@@ -1,0 +1,110 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body font */
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgb(16, 31, 33),
+    rgba(28, 43, 45, 0.8) 70%,
+    rgba(16, 31, 33, 0.2) 100%
+  );
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+#logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfa5; /* optional hover color */
+}
+
+/* Search bar container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+/* Search input */
+.search-bar input {
+  border: none;
+  outline: none;
+  color: #00796b;
+  font-size: 0.7rem;
+  padding: 8px 12px;
+  width: 200px;
+}
+
+.search-bar input::placeholder {
+  color: #009688;
+}
+
+/* Search and clear buttons */
+.search-bar button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #00796b;
+  color: white;
+}
+
+/* Responsive: stack elements on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+}
