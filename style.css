@@ -114,21 +114,23 @@ body {
 }
 
 #home,
-#about {
+#about,
+#contact {
   background-image: url("background.png");
   width: 99vw;
   height: 92vh;
 }
 
 .home-bg,
-.about-bg {
+.about-bg,
+.contact-bg {
   weight: 100%;
   height: 100%;
   background: linear-gradient(
     90deg,
-    rgba(16, 31, 33, 0.8) 0%,
-    rgba(16, 31, 33, 0.8) 30%,
-    rgba(16, 31, 33, 0.2) 100%
+    rgba(30, 81, 77, 0.8) 0%,
+    rgba(30, 81, 77, 0.8) 30%,
+    rgba(30, 81, 77, 0.2) 100%
   );
   display: flex;
   justify-content: space-around;
@@ -161,7 +163,8 @@ ul li a i {
 }
 
 .home-content,
-.about-content {
+.about-content,
+.contact-content {
   width: 90%;
   height: 60%;
   display: flex;
@@ -177,6 +180,13 @@ ul li a i {
   padding-left: 50px;
 }
 
+.contact-content {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
 .home-title {
   color: white;
   width: 50%;
@@ -188,6 +198,12 @@ ul li a i {
   color: white;
   width: 90%;
   font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact-title {
+  color: white;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -268,9 +284,56 @@ ul li a i {
 }
 
 .card-btn {
-  padding: 5px;
+  margin-top: 10px;
+  padding: 7px 5px;
   background-color: rgb(17, 46, 109);
   color: white;
   font-weight: bold;
   border: 1px solid rgb(172, 174, 180);
   border-radius: 5px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+form {
+  width: 50%;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(27, 27, 27, 0.2);
+}
+
+form input {
+  height: 30px;
+  border: 1px solid rgb(172, 174, 180);
+  background-color: transparent;
+}
+
+form input::placeholder {
+  color: rgb(172, 174, 180);
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+form textarea {
+  background-color: transparent;
+  border: 1px solid rgb(172, 174, 180);
+  height: 100px;
+  padding: 5px 10px;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
