@@ -26,11 +26,11 @@
         <!-- Search bar -->
         <div class="search-bar">
               <div class="input-wrapper">
-                <input type="text" placeholder="Enter a destination or keyword">
+                <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
                 <span class="search-icon"><i class="fa fa-search"></i></span>
             </div>
-            <button class="search-btn">Search</button>
-            <button class="clear-btn">Clear</button>
+            <button class="search-btn" onclick="searchPlaces()">Search</button>
+            <button class="clear-btn" onclick="clearResults()">Clear</button>
         </div>
     </nav>
 
@@ -59,6 +59,6 @@
     </section>
     <div id="results"></div>
 
-    <script src="travel_recomendation.js"></script>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
